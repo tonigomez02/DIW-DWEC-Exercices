@@ -169,6 +169,39 @@ function _04AbansA(){
         
     }
 //Funció 14
+
+    function _14EsNumero(){
+        let valor = parseInt(document.getElementById("entrada").value)
+
+        if(isNaN(valor)){
+            document.getElementById("salida").innerHTML = "No es un numero"
+        }else{
+            document.getElementById("salida").innerHTML = "Es un numero"
+        }
+    }
+
+
 //Funció 15
+
+    function _15NumeroPartEntera(){
+        let valor = parseInt(document.getElementById("entrada").value)
+
+        document.getElementById("salida").innerHTML = valor.toFixed()
+
+    }
 //Funció 16
+
+    function _16NumeroPartDecimals(){
+        let newNumber = 0;
+        let valor = parseInt(document.getElementById("entrada").value)
+
+    }
 //Funció 17
+
+    function _17Xxamb3Decimals(){
+        let newNumber = 0;
+        let valor = parseInt(document.getElementById("entrada").value)
+
+        newNumber = valor/19
+        document.getElementById("salida").innerHTML = newNumber.toFixed(3)
+    }
