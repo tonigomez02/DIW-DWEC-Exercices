@@ -1,0 +1,40 @@
+body{
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+.contenedor{
+    background-color: rgba(252,225,61,255);
+    width: 68vw;
+    height: 55vh;
+
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.lorem {
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+img{
+    display:block;
+    margin:auto;
+    padding-top: 50px;
+}
+
+.restaurant{
+    text-align: center;
+    font-size: 23px;
+    font-style: oblique;
+    text-decoration: underline;
+    margin-top: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
