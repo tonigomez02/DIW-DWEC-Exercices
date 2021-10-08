@@ -28,7 +28,7 @@ function _03QuantesA(){
     let valor = document.getElementById("entrada").value
 
     for (let i = 0; i < valor.length; i++) {
-        if(valor.charAt(i) == "a"){
+        if(valor.charAt(i) == "a" || valor.charAt(i) == "A" ){
             ocurrencias +=1
             console.log(ocurrencias)
         }
@@ -71,26 +71,25 @@ function _04AbansA(){
                 ocurrencias++
             }
         }
-        if(oc){
+        if(valor){
 
         }
     }
 //Funció 6
 
     function _06EsborraSubstring(){
-        let salida = ""
-        let novaParaula = "";
-        let final = false;
-        let ocurrencias = 0;
         let valor = document.getElementById("entrada").value
 
-        for (let i = 0; i < valor.length; i++) {
-            if(valor.charAt(i) == "la"){
-
-            }
-        }
+        document.getElementById("entrada").innerHTML = valor.replace(/la/g, "")
+    
     }
 //Funció 7
+
+    function _07SubstitueixSubstring(){
+        let valor = document.getElementById("entrada").value
+
+        document.getElementById("salida").innerHTML = valor.replace(/la/g, "*")
+        }
 //Funció 8
 
     function _08CapIcua(){
@@ -115,15 +114,7 @@ function _04AbansA(){
         let novaParaula = "";
         let valor = document.getElementById("entrada").value
 
-        novaParaula = valor.split(" ")
-        for (let i = 0; i < novaParaula.length; i++) {
-            if(novaParaula[i] === ''){
-                console.log("he pasado")
-                novaParaula.splice(i,1)
-            }
-        }
-        novaParaula.join("-")
-        console.log(novaParaula)
+        novaParaula = valor.replace(/ /g, "-")
         document.getElementById("salida").innerHTML = novaParaula
     }
 //Funció 11
@@ -166,6 +157,15 @@ function _04AbansA(){
 //Funció 13
 
     function _13NumerosISigne(){
+        let valor = parseInt(document.getElementById("entrada").value)
+        
+        if(valor <0){
+            document.getElementById("salida").innerHTML = "El número es negatiu"
+        }else if(valor === 0){
+            document.getElementById("salida").innerHTML = "El número es 0"
+        }else{
+            document.getElementById("salida").innerHTML = "El número es positiu"
+        }
         
     }
 //Funció 14
@@ -193,8 +193,10 @@ function _04AbansA(){
 
     function _16NumeroPartDecimals(){
         let newNumber = 0;
-        let valor = parseInt(document.getElementById("entrada").value)
+        let valor = document.getElementById("entrada").value
 
+        newNumber = (valor + "").split(".")[1]
+        document.getElementById("salida").innerHTML = newNumber
     }
 //Funció 17
 
