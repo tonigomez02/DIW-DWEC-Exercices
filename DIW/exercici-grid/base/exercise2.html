@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2: My first CSS Grid Layout</title>
+
+    <style>
+      body {
+        margin: 5px;
+      }
+
+      .wrapper {
+        background-color: #fff;
+        color: #444;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: repeat(4, 75px);
+        grid-gap: 20px;
+        grid-template-areas: 
+        "header header"
+        "contenido aside1"
+        "contenido aside2"
+        "footer footer";
+        
+      }
+
+      .box {
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+      }
+
+      .cabecera {
+        background-color: blue;
+        grid-area: header;
+      }
+
+      .contenido {
+        background-color: darkgreen;
+        grid-area: contenido;
+      }
+
+      .aside1 {
+        background-color: brown;
+        grid-area: aside1;
+      }
+
+      .aside2 {
+        background-color: darkslategray;
+        grid-area: aside2;
+      }
+
+      .pie {
+        background-color: darkgrey;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="box cabecera">CABECERA</div>
+      <div class="box contenido">CONTENIDO</div>
+      <div class="box aside1">ASIDE1</div>
+      <div class="box aside2">ASIDE2</div>
+      <div class="box pie">PIE</div>
+    </div>
+  </body>
+</html>

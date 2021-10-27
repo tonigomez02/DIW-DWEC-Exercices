@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise CSS Grid: Layering items with z-index</title>
+    <style>
+      body {
+        margin: 40px;
+      }
+
+      .wrapper {
+        background-color: #fff;
+        color: #444;
+      }
+
+      .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 200%;
+      }
+
+      .i {
+        background-color: rgba(49, 121, 207, 0.5);
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="box a">A</div>
+      <div class="box b">B</div>
+      <div class="box c">C</div>
+      <div class="box d">D</div>
+
+      <div class="box i">I</div>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,8 @@
 .cards {
     /*************  ADD YOUR CODE HERE ************/
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     /************** END OF YOUR CODE ***************/
 }
 
@@ -10,18 +12,26 @@
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     padding:5px;
     /*************  ADD YOUR CODE HERE ************/
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 
     /************** END OF YOUR CODE ***************/
 }
 
 .card img {
     /*************  ADD YOUR CODE HERE ************/
-
+    width: 200px;
+    height: 125px;
     /************** END OF YOUR CODE ***************/
 }
 
 .card .text {
     padding: 0 5px 5px;
+    width: 200px;
 }
 
 .card .text>button {
@@ -29,6 +39,20 @@
     border: 0;
     color: white;
     /*************  ADD YOUR CODE HERE ************/
-
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
     /************** END OF YOUR CODE ***************/
+}
+
+h3{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+p{
+    font-family: sans-serif;
+    text-align: start;
+    font-size: 14px;
+    margin-top: px;
 }
