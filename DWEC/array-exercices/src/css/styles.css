@@ -1,7 +1,7 @@
 .encabezado, .contenedor, .resultat-contenedor{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(148, 83, 83);
+    background-color: darkblue;
     border: 2px solid black;
     padding: 9px;
     margin: 20px;

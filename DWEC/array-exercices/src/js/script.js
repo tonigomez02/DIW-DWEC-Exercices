@@ -8,13 +8,13 @@ function options(param) {
     switch (param) {
 
         case 0:
-            for (let i = 0; i < arrayValor.length; i++) {
-                if (i === arrayValor.length -1){
-                    retorno += arrayValor[i]
+            arrayValor.map(function (currentValue, index, array){
+                if (index === array.length -1){
+                    retorno += currentValue
                 }else {
-                    retorno += arrayValor[i] + "$"
+                    retorno += currentValue + "$"
                 }
-            }
+            })
             salida.innerHTML = retorno
             break
         case 1:
@@ -51,13 +51,13 @@ function options(param) {
             salida.innerHTML = arrayValor
             break
         case 9:
-            for (let i = 0; i < arrayValor.length; i++) {
-                if (i === arrayValor.length -1){
-                    retorno += arrayValor[i]
+            arrayValor.map(function (currentValue, index, array){
+                if (index === array.length -1){
+                    retorno += currentValue
                 }else {
-                    retorno += arrayValor[i] + "-"
+                    retorno += currentValue + "-"
                 }
-            }
+            })
             salida.innerHTML = retorno
             break
         case 10:
@@ -84,13 +84,12 @@ function options(param) {
             salida.innerHTML = arrayValor.reduce((valorAnterior,valorActual) => valorAnterior + valorActual)
             break
         case 15:
-            arrayValor = arrayValor.map(value => parseInt(value))
-            retorno = arrayValor[0]
+            retorno = parseInt(arrayValor[0])
             arrayValor.forEach(function (currentValue, index,array){
                 if (array[index + 1] !== undefined){
-                    if (retorno > array[index + 1]){
+                    if (retorno > parseInt(array[index + 1])){
                     }else {
-                        retorno = array[index + 1]
+                        retorno = parseInt(array[index + 1])
                     }
                 }
             })
