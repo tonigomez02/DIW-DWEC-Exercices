@@ -1,0 +1,20 @@
+/** EXTEND **/
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+
+div ul li {
+  padding: 0;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

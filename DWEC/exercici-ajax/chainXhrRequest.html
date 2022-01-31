@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    const url = 'http://localhost:3000/books/2'
+    const url2 = 'https://my-json-server.typicode.com/classicoman2/fakeRESTserver/characters/1'
+    // Crea objecte XHR
+    const xhr = new XMLHttpRequest()
+
+    // Callback
+    xhr.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+
+            let data = JSON.parse(this.responseText)
+            console.log(data.author)
+
+            const xhr2 = new XMLHttpRequest()
+            xhr2.onreadystatechange = function (){
+                if (this.readyState === 4 && this.status === 200){
+                    let data2 = JSON.parse(this.responseText)
+                    console.log(data2.name)
+                }
+            }
+            xhr2.open('GET', url2)
+            xhr2.send()
+        }
+    }
+
+    xhr.open('GET', url, true)
+    xhr.send()
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const url = 'http://localhost:3000/books/3'
+    // Crea objecte XHR
+    const xhr = new XMLHttpRequest()
+
+    // Callback
+    xhr.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            // Imprimeix el text obtingut
+            console.info(this.responseText)
+        }
+    }
+
+    xhr.open('GET', url, true)
+    xhr.send()
+</script>
+</body>
+</html>

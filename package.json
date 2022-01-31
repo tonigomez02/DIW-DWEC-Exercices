@@ -1,0 +1,24 @@
+{
+  "name": "repositori-exercicis",
+  "version": "1.0.0",
+  "description": "- [x] Logo\r - [x] Position display\r - [x] Viewport units\r - [x] Flexbox\r - [ ] Grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonigomez02/DIW-DWEC-Exercices.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonigomez02/DIW-DWEC-Exercices/issues"
+  },
+  "homepage": "https://github.com/tonigomez02/DIW-DWEC-Exercices#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}
